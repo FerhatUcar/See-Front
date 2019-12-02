@@ -1,4 +1,24 @@
 @import "../../node_modules/bourbon/core/bourbon";
+@import "componenets/box";
+@import "componenets/tabs";
+@import "componenets/card";
+@import "componenets/cardgrid";
+
+/// --- style
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+html {
+  @include size(100%);
+  background-color: #f0f0f0;
+}
 
 body {
   margin: 0;
@@ -9,7 +29,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.container {
+  max-width: 1100px;
+  margin: 1rem auto;
+  padding: 0 2rem;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
   monospace;
+}
+
+h1 {
+  color: #707070;
+  margin-bottom: 2rem;
+}
+
+p {
+  margin-bottom: 1rem;
 }
